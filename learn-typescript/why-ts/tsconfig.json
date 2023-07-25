@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": true
+  }
+}
