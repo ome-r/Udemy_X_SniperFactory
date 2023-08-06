@@ -10,12 +10,7 @@
     "dev": "pnpm build --watch"
   },
   "author": "",
-  "browser": "./browser/specific/main.js",
   "license": "ISC",
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
@@ -23,7 +18,13 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@types/node": "^20.4.5",
-    "@types/react": "^18.2.17",
+    "@zeit/next-css": "^1.0.1",
+
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.7",
+
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "style-loader": "^3.3.3",
@@ -36,5 +37,11 @@
     "@types/classnames": "^2.3.1",
     "@zeit/next-css": "^1.0.1",
     "classnames": "^2.3.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.7"
   }
 }

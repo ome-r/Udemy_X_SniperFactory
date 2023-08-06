@@ -1,3 +1,3 @@
 import React from "react";
-declare const SFACPlayer: React.FC<SFACPlayerProps>;
+declare var SFACPlayer: (_ref: any) => React.DetailedReactHTMLElement<null, HTMLElement>;
 export default SFACPlayer;

@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs2',
     umdNamedDefine: true,
     globalObject: 'this',
   },
@@ -15,7 +15,7 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: 'ts-loader',
+        use: ['ts-loader', 'babel-loader'],
       },
       {
         test: /\.css$/,
@@ -27,7 +27,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js'],
   },
   externals: {
-    react: 'react',
-    'react-dom': 'react-dom',
-  },
+    'react': 'commonjs react',
+    'react-dom' : 'commonjs react-dom'
+  }
 };
